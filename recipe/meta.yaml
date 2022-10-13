@@ -1,5 +1,5 @@
 {% set name = "exoplanet-core" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,12 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/exoplanet_core-{{ version }}.tar.gz
-  sha256: 33f25c7b77b3882cbf16a94636b791f68816b5d929fdb9c26d808bca93c7854e
-  patches:
-    - 0001-patching-ssize_t.patch
+  sha256: c7d52ce595f355387a4ffe545517f1d9a406993f001ec96dd15342cbf1b4b126
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
