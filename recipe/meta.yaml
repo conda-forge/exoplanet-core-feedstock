@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/exoplanet_core-{{ version }}.tar.gz
   sha256: c7d52ce595f355387a4ffe545517f1d9a406993f001ec96dd15342cbf1b4b126
-  patches:
-    - 0001-patching-ssize_t.patch
 
 build:
   number: 0
