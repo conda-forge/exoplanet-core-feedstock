@@ -27,7 +27,7 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
-    - make  # [linux]
+    - make  # [unix]
   host:
     - python
     - scikit-build-core
